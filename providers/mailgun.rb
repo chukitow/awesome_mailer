@@ -1,7 +1,7 @@
 module Providers
   class Mailgun < Base
     def url
-      "https://api:#{ENV['mailgun_access_token']}@api.mailgun.net/v3/#{ENV['mailgun_domain']}/messages"
+      "https://api:#{ENV['MAILGUN_ACCESS_TOKEN']}@api.mailgun.net/v3/#{ENV['MAILGUN_DOMAIN']}/messages"
     end
 
     def formated_params

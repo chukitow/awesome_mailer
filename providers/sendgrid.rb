@@ -34,7 +34,7 @@ module Providers
     def headers
       {
         content_type: "application/json",
-        authorization: "Bearer #{ENV['sendgrid_access_token']}"
+        authorization: "Bearer #{ENV['SENGRID_ACCESS_TOKEN']}"
       }
     end
   end
