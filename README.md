@@ -1,6 +1,6 @@
 # Awesome Mailer
 
-This is an small ruby application to send emails through some email services
+This is an small ruby application to send emails through some email services, you can find this application up and running at http://polar-shore-68006.herokuapp.com/
 
 ## Requirements
 
