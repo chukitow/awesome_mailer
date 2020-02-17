@@ -9,12 +9,7 @@ module Providers
 
     def send
       response = RestClient.post(url, formated_params, headers)
-      @status = response.code
-      { status: @status, body: (JSON.parse(response.body) rescue nil) }
-    end
-
-    def success?
-      @status === 200
+      { status: response.code, body: (JSON.parse(response.body) rescue nil) }
     end
 
     def headers
